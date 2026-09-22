@@ -8,301 +8,878 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegación principal">
 
-    <header>
-        <nav aria-label="Navegación Principal">
-            <a href="#inicio">
-                Karla Santillan
-            </a>
+            <a class="navbar__brand" href="#inicio">♥ K. SANTILLAN</a>
 
-            <ul>
+            <ul class="navbar__menu">
                 <li>
                     <a href="#inicio">Inicio</a>
                 </li>
+
                 <li>
                     <a href="#sobre-mi">Sobre mí</a>
                 </li>
+
                 <li>
-                    <a href="#habilidades">Habilidades</a>
+                    <a href="#habilidades">Skills</a>
                 </li>
+
                 <li>
                     <a href="#proyectos">Proyectos</a>
                 </li>
+
                 <li>
-                    <a href="#design-system">Design System</a>
+                    <a href="#design-system">Design</a>
                 </li>
+
                 <li>
                     <a href="#contacto">Contacto</a>
                 </li>
             </ul>
+
+            <a class="navbar__github" href="https://github.com/KarlaSantillan" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de GitHub de Karla Santillan"> GitHub </a>
         </nav>
     </header>
 
     <main>
-        <section id="inicio">
-            <div>
-                <p>Hola!, soy</p>
-                <h1>Karla Santillan</h1>
-                <p>Estudiante de ingeniería de software interesada en el desarrollo de software y tecnologías digitales.</p>
+        <section id="inicio" class="hero">
+            <div class="hero__content">
+                <p class="hero__eyebrow">
+                    ♥ NEW GAME · PORTFOLIO
+                </p>
 
-                <a href="#proyectos">Ver proyectos!</a>
-                <a href="#contacto">Contáctame</a> 
+                <h1 class="hero__title">
+                <span>Karla Nohelia</span>
+                <strong>Santillan</strong>
+                <span>Cabrera</span>
+                </h1>
+
+                <p class="hero__role">
+                    SOFTWARE ENGINEERING STUDENT
+                </p>
+
+                <p class="hero__description">
+                    Estudiante de Ingeniería de Software interesada
+                    en el desarrollo de software, creación de soluciones
+                    tecnológicas y tecnologías digitales.
+                </p>
+
+                <div class="hero__actions">
+
+                    <a href="#proyectos">♥ PROYECTOS</a>
+
+                    <a href="#contacto">✉ CONTACTAR</a>
+                </div>
             </div>
 
-            <figure>
-                <img src="assets/img/foto carnet Karla.png" alt="Foto profesional de Karla">
-                <figcation>
-                    <p>Ingeniera en software en formación.</p>
-                </figcation>
-            </figure>
-        </section>
+            <aside class="status-card" aria-labelledby="status-title">
+                <header class="status-card__header">
 
-        <section id="sobre-mi">
-            <header>
-                <h2>Sobre mí</h2>
-                <p>
-                    Te invito a conocer más sobre mi formación académica, mis intereses y objetivos profesionales.
-                </p>
-            </header>
+                    <h2 id="status-title">* KARLA SANTILLAN</h2>
 
-            <article>
-                <h3>Perfil profesional</h3>
-                <p>
-                    Soy estudiante interesada en el desarrollo de software, creación de soluciones tecnológicas y seguir aprendiendo!
-                </p>
-            </article>
+                    <span>STATUS</span>
+                </header>
 
-            <article>
-                <h3>Formación académica</h3>
-                <p>
-                    Actualmente me encuentro desarrollando conocimientos
-                    relacionados con programación, bases de datos,
-                    desarrollo web y otras áreas de la ingeniería de software.
-                </p>
-            </article>
-            <aside>
-                <h3>Actualmente estoy aprendiendo</h3>
-                <p>
-                    HTML5, CSS, JavaScript, Git, GitHub y otras
-                    tecnologías relacionadas con el desarrollo web.
-                </p>
+
+                <figure class="status-card__figure">
+                    <img src="assets/img/foto carnet Karla.png" alt="Fotografía profesional de Karla Santillan">
+                    <figcaption>
+                        Estudiante de Ingeniería de Software en formación.
+                    </figcaption>
+                </figure>
+
+
+                <div class="status-card__health">
+                    <span>HP</span>
+                    <progress value="20" max="20" aria-label="Indicador visual decorativo">20 de 20</progress>
+                    <span>20/20</span>
+                </div>
+
+                <dl class="status-card__info">
+                    <div>
+                        <dt>LV</dt>
+                        <dd>Software</dd>
+                    </div>
+
+                    <div>
+                        <dt>JOB</dt>
+                        <dd>Software Development / Data / AI</dd>
+                    </div>
+
+                    <div>
+                        <dt>LOC</dt>
+                        <dd>Ecuador</dd>
+                    </div>
+                </dl>
             </aside>
         </section>
 
-        <section id="habilidades">
-            <header>
-                <h2>Habilidades</h2>
+
+        <section id="sobre-mi" class="about">
+            <header class="section-header">
                 <p>
-                    Estas son las tecnologís y herramientas que utilizo o me encuentro aprendiendo.
+                    <span>01</span>
+                    ABOUT
+                </p>
+
+                <h2>Sobre mí</h2>
+
+                <p>
+                    Formación e intereses presentados de forma breve
+                    y profesional.
                 </p>
             </header>
 
-            <section>
-                <h3>Frontend</h3>
-                <article>
-                    <h4>HTML5</h4>
-                    <p>Estructuración semántica de páginas web.</p>
-                </article>
+            <div class="about__content">
 
-                <article>
-                    <h4>CSS</h4>
-                    <p>Diseño visual y creación de interfaces web.</p>
-                </article>
+                <article class="terminal-card">
+                    <header>
+                        <h3>ABOUT_ME.EXE</h3>
+                    </header>
 
-                <article>
-                    <h4>JavaScript</h4>
-                    <p>Desarrollo de funcionalidades interactivas</p>
-                </article>
-            </section>
+                    <ul>
+                        <li>Software Engineering Student</li>
+                        <li>Software Development</li>
+                        <li>Data & Artificial Intelligence</li>
+                        <li>Learning & Building...</li>
+                    </ul>
 
-            <section>
-                <h3>Herramientas</h3>
-                <article>
-                    <h4>Git</h4>
-                    <p>Control de versiones de proyectos</p>
-                </article>
-
-                <article>
-                    <h4>GitHub</h4>
-                    <p>Gestión y almacenamiento de repositorios.</p>
-                </article>
-
-                <article>
-                    <h4>VS Code</h4>
                     <p>
-                        Entorno utilizado para desarrollo
+                        Soy estudiante de Ingeniería de Software,
+                        interesada en el desarrollo de software,
+                        creación de soluciones tecnológicas y
+                        aprendizaje continuo.
+                    </p>
+
+                    <p>
+                        Durante mi formación académica he trabajado con
+                        desarrollo web, bases de datos, aplicaciones
+                        académicas y proyectos relacionados con
+                        inteligencia artificial.
                     </p>
                 </article>
-            </section>
+
+                <div class="about__details">
+                    <section class="info-card">
+
+                        <h3>Perfil académico</h3>
+
+                        <ul>
+                            <li>Ingeniería en Software</li>
+                            <li>Universidad Estatal de Milagro</li>
+                            <li>Desarrollo de aplicaciones</li>
+                            <li>Interés en soluciones tecnológicas e IA</li>
+                        </ul>
+                    </section>
+
+
+                    <section class="info-card">
+                        <h3>Enfoque profesional</h3>
+
+                        <ul>
+                            <li>Desarrollo web</li>
+                            <li>Backend</li>
+                            <li>Bases de datos</li>
+                            <li>Análisis de datos</li>
+                            <li>Inteligencia artificial</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
         </section>
 
-        <section id="proyectos">
-            <header>
+
+        <section id="habilidades" class="skills">
+            <header class="section-header">
+
+                <p>
+                    <span>02</span>
+                    SKILLS
+                </p>
+
+                <h2>Habilidades técnicas</h2>
+
+                <p>
+                    Tecnologías y herramientas utilizadas o
+                    actualmente en aprendizaje.
+                </p>
+            </header>
+
+            <div class="skills__grid">
+
+
+                <section class="skill-category">
+                    <h3>Backend</h3>
+
+                    <ul class="skill-list">
+
+                        <li class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">Django</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <span class="skill-level skill-level--learning">
+                                Aprendiendo
+                            </span>
+                        </li>
+
+                    </ul>
+                </section>
+
+
+                <section class="skill-category">
+                    <h3>Frontend</h3>
+
+                    <ul class="skill-list">
+
+                        <li class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <span class="skill-level skill-level--basic">
+                                Básico
+                            </span>
+                        </li>
+
+                    </ul>
+                </section>
+
+
+                <section class="skill-category">
+                    <h3>Bases de datos</h3>
+
+                    <ul class="skill-list">
+
+                        <li class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">SQLite</span>
+                            <span class="skill-level skill-level--basic">
+                                Básico
+                            </span>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="skill-category">
+                    <h3>Datos e IA</h3>
+
+                    <ul class="skill-list">
+
+                        <li class="skill-item">
+                            <span class="skill-name">TensorFlow</span>
+                            <span class="skill-level skill-level--learning">
+                                Aprendiendo
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">Keras</span>
+                            <span class="skill-level skill-level--learning">
+                                Aprendiendo
+                            </span>
+                        </li>
+
+                    </ul>
+                </section>
+
+                <section class="skill-category">
+                    <h3>Herramientas</h3>
+
+                    <ul class="skill-list">
+                        <li class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">GitHub</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+
+                        <li class="skill-item">
+                            <span class="skill-name">Visual Studio Code</span>
+                            <span class="skill-level skill-level--intermediate">
+                                Intermedio
+                            </span>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+        </section>
+
+        <section id="proyectos" class="projects">
+            <header class="section-header">
+                <p>
+                    <span>03</span>
+                    PROJECTS
+                </p>
+
                 <h2>Proyectos destacados</h2>
+
                 <p>
-                    Algunos proyectos académicos y personales desarrollados durante mi formación.
+                    Proyectos académicos desarrollados durante
+                    mi formación.
                 </p>
             </header>
 
-            <article>
-                <figure>
-                    <img src="assets/img/foto carnet Karla.png" alt="Proyecto número uno">
-                    <figcaption>
-                        Vista principal del proyecto.
-                    </figcaption>
-                </figure>
-                
-                <h3>Proyecto 1</h3>
-                <p>
-                    Breve descripción del proyecto
-                </p>
-                <h4>Problema que resuelve</h4>
-                <p>
-                    Explicación del problema o necesidad que busca solucionar.
-                </p>
-                <h4>Tecnologías</h4>
-                <p>
-                    HTML, CSS y JavaScript
-                </p>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
-            </article>
+            <div class="project-filters" role="group" aria-label="Filtrar proyectos por categoría">
 
-            <article>
-                <figure>
-                    <img src="assets/img/foto carnet Karla.png" alt="Proyecto número dos">
-                    <figcaption>
-                        Vista principal del proyecto.
-                    </figcaption>
-                </figure>
-                
-                <h3>Proyecto 3</h3>
-                <p>
-                    Breve descripción del proyecto
-                </p>
-                <h4>Problema que resuelve</h4>
-                <p>
-                    Explicación del problema o necesidad que busca solucionar.
-                </p>
-                <h4>Tecnologías</h4>
-                <p>
-                    HTML, CSS y JavaScript
-                </p>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
-            </article>
-
-            <article>
-                <figure>
-                    <img src="assets/img/foto carnet Karla.png" alt="Proyecto número uno">
-                    <figcaption>
-                        Vista principal del proyecto.
-                    </figcaption>
-                </figure>
-                
-                <h3>Proyecto 3</h3>
-                <p>
-                    Breve descripción del proyecto
-                </p>
-                <h4>Problema que resuelve</h4>
-                <p>
-                    Explicación del problema o necesidad que busca solucionar.
-                </p>
-                <h4>Tecnologías</h4>
-                <p>
-                    HTML, CSS y JavaScript
-                </p>
-                <a href="https://github.com/" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
-            </article>
-        </section>
-
-        <section id="design-system">
-            <header>
-                <h2>Design System</h2>
-                <p>
-                    Sistema visual y componentes reutilizables utilizados en el portafolio
-                </p>
-            </header>
-
-            <section>
-                <h3>Colores</h3>
-                <p>
-                    Aquí mostraremos posteriormente la paleta de colores utilizada
-                </p>
-            </section>
-
-            <section>
-                <h3>Tipografía</h3>
-                <p>Aquí mostraremos la jerarquía de textos utilizado en el proyecto.</p>
-            </section>
-
-            <section>
-                <h3>Espaciado</h3>
-                <p>
-                    Aquí documentaremos la escala de espaciados.
-                </p>
-            </section>
-
-            <section>
-                <h3>Componentes</h3>
-                <article>
-                    <h4>Botones</h4>
-                </article>
-
-                <article>
-                    <h4>Cards</h4>
-                </article>
-
-                <article>
-                    <h4>Skills</h4>
-                </article>
-
-                <article>
-                    <h4>Inputs</h4>
-                </article>
-            </section>
-        </section>
-
-        <section id="Contacto">
-            <header>
-                <h2>Contacto</h2>
-                <p>
-                Puedes comunicarte conmigo mediante el siguiente formulario!
-                </p>
-            </header>
-
-            <form>
-                <div>
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                </div>
-
-                <div>
-                    <label for="correo">Correo electrónico</label>
-                    <input type="email" id="correo" name="correo" required>
-                </div>
-
-                <div>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" rows="5" required></textarea>
-                </div>
-
-                <button type="submit">
-                    Enviar
+                <button type="button" data-filter="todos">
+                    TODOS
                 </button>
-            </form>
-        </section>
-    </main>
 
-    <footer>
+                <button type="button" data-filter="backend">
+                    BACKEND
+                </button>
+
+                <button type="button" data-filter="data">
+                    DATA
+                </button>
+
+                <button type="button" data-filter="ia">
+                    IA
+                </button>
+            </div>
+
+
+            <div class="projects__grid">
+
+                <article class="project-card" data-category="backend ia">
+
+                    <figure>
+                        <img src="assets/img/panel solar.png" alt="Captura del proyecto de clasificación de incidencias en paneles solares">
+                        <figcaption>
+                            Proyecto de clasificación de condiciones
+                            visibles en paneles solares.
+                        </figcaption>
+                    </figure>
+
+                    <div class="project-card__content">
+
+                        <p>PROJECT_01</p>
+
+                        <h3>
+                            Clasificador de incidencias en paneles solares
+                        </h3>
+
+                        <p>
+                            Aplicación web académica desarrollada con
+                            Django para clasificar condiciones visibles
+                            en paneles solares mediante un modelo ResNet50.
+                        </p>
+
+                        <h4>Problema que resuelve</h4>
+
+                        <p>
+                            Facilita el análisis de fotografías de paneles
+                            fotovoltaicos para estimar diferentes condiciones
+                            visuales relacionadas con mantenimiento.
+                        </p>
+
+
+                        <h4>Tecnologías</h4>
+
+                        <ul class="project-card__technologies">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>TensorFlow</li>
+                            <li>Keras</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                        <a href="https://github.com/KarlaSantillan/Clasificador-de-incidencias-en-paneles-solares.git" target="_blank" rel="noopener noreferrer">Ver repositorio</a>
+                    </div>
+                </article>
+
+                <article class="project-card" data-category="backend data">
+                    <figure>
+                        <img src="assets/img/guioss.png" alt="Captura de la aplicación web GUIOS Plus">
+                        <figcaption>
+                            Aplicación web colaborativa GUIOS+.
+                        </figcaption>
+                    </figure>
+
+                    <div class="project-card__content">
+                        <p>PROJECT_02</p>
+
+                        <h3>GUIOS+</h3>
+
+                        <p>
+                            Aplicación web para evaluar alternativas
+                            de software libre y de código abierto
+                            mediante dimensiones, factores y subfactores
+                            del método GUIOS.
+                        </p>
+
+                        <h4>Problema que resuelve</h4>
+
+                        <p>
+                            Automatiza el proceso de evaluación de
+                            software antes de su adopción dentro de
+                            una organización.
+                        </p>
+
+
+                        <h4>Tecnologías</h4>
+
+                        <ul class="project-card__technologies">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>PostgreSQL</li>
+                            <li>Node.js</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+
+                        <a href="https://github.com/GabrielHasqui/GUIOSS_PLUS.git" target="_blank" rel="noopener noreferrer">
+                            Ver repositorio
+                        </a>
+                    </div>
+
+                </article>
+
+                <article class="project-card" data-category="backend">
+                    <figure>
+                        <img src="assets/img/Control de inventario.png" alt="Captura del sistema web de control de inventario">
+                        <figcaption>
+                            Sistema colaborativo para control de inventarios.
+                        </figcaption>
+                    </figure>
+
+                    <div class="project-card__content">
+
+                        <p>PROJECT_03</p>
+
+                        <h3>Sistema de inventario</h3>
+
+                        <p>
+                            Sistema web para gestionar productos,
+                            usuarios, existencias y entregas dentro
+                            de un contexto académico.
+                        </p>
+
+                        <h4>Problema que resuelve</h4>
+
+                        <p>
+                            Permite mantener registro y trazabilidad
+                            de productos, revisar existencias y conocer
+                            a quién ha sido entregado cada elemento.
+                        </p>
+
+
+                        <h4>Tecnologías</h4>
+
+                        <ul class="project-card__technologies">
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>SQLite</li>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+
+                        <a href="https://github.com/jguadalupec-netizen/inventario.git" target="_blank" rel="noopener noreferrer">
+                            Ver repositorio
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="design-system" class="design-system">
+            <header class="section-header">
+
+                <p>
+                    <span>04</span>
+                    DESIGN SYSTEM
+                </p>
+
+                <h2>Design System / Componentes</h2>
+
+                <p>
+                    Decisiones visuales y componentes reutilizables
+                    utilizados en el portafolio.
+                </p>
+            </header>
+
+            <div class="design-system__grid">
+                <section class="design-card">
+
+                    <h3>Colores</h3>
+
+                    <ul class="color-tokens">
+                        <li>
+                            <span>Background</span>
+                            <code>#0A0713</code>
+                        </li>
+
+                        <li>
+                            <span>Surface</span>
+                            <code>#150C28</code>
+                        </li>
+
+                        <li>
+                            <span>Primary</span>
+                            <code>#F3ECFF</code>
+                        </li>
+
+                        <li>
+                            <span>Accent</span>
+                            <code>#FF3355</code>
+                        </li>
+
+                        <li>
+                            <span>Violet</span>
+                            <code>#B14AEA</code>
+                        </li>
+
+                        <li>
+                            <span>Teal</span>
+                            <code>#33D6D6</code>
+                        </li>
+
+                        <li>
+                            <span>Gold</span>
+                            <code>#FFD23D</code>
+                        </li>
+
+                        <li>
+                            <span>Text Muted</span>
+                            <code>#AB9ED4</code>
+                        </li>
+
+                        <li>
+                            <span>Border</span>
+                            <code>#C9A6FF</code>
+                        </li>
+
+                    </ul>
+
+                </section>
+
+                <section class="design-card">
+
+                    <h3>Tipografía</h3>
+
+                    <div class="typography-samples">
+
+                        <p class="sample-heading-1">
+                            H1 — Título
+                        </p>
+
+                        <p class="sample-heading-2">
+                            H2 — Sección
+                        </p>
+
+                        <p class="sample-heading-3">
+                            H3 — Componente
+                        </p>
+
+                        <p>
+                            P — Texto utilizado para contenido
+                            y descripciones.
+                        </p>
+
+                        <p class="text-muted">
+                            Texto secundario.
+                        </p>
+
+                        <a href="#inicio">
+                            Enlace de ejemplo
+                        </a>
+                    </div>
+                </section>
+
+                <section class="design-card">
+
+                    <h3>Espaciado</h3>
+
+                    <dl>
+
+                        <div>
+                            <dt>XS</dt>
+                            <dd>0.25rem</dd>
+                        </div>
+
+                        <div>
+                            <dt>SM</dt>
+                            <dd>0.5rem</dd>
+                        </div>
+
+                        <div>
+                            <dt>MD</dt>
+                            <dd>1rem</dd>
+                        </div>
+
+                        <div>
+                            <dt>LG</dt>
+                            <dd>2rem</dd>
+                        </div>
+
+                        <div>
+                            <dt>XL</dt>
+                            <dd>4rem</dd>
+                        </div>
+                    </dl>
+                </section>
+
+
+                <section class="design-card">
+
+                    <h3>Componentes</h3>
+
+                    <div class="component-preview">
+
+                        <button type="button">
+                            Primario
+                        </button>
+
+                        <button type="button">
+                            Secundario
+                        </button>
+
+                        <button type="button">
+                            ♥ Acción
+                        </button>
+                    </div>
+
+                    <div>
+
+                        <label for="design-input">
+                            Input de ejemplo
+                        </label>
+
+                        <input
+                            id="design-input"
+                            type="text"
+                            placeholder="Escribe algo..."
+                        >
+
+                    </div>
+
+
+                    <div>
+
+                        <label for="design-textarea">
+                            Textarea de ejemplo
+                        </label>
+
+                        <textarea
+                            id="design-textarea"
+                            rows="3"
+                            placeholder="Mensaje..."
+                        ></textarea>
+                    </div>
+                </section>
+            </div>
+        </section>
+
+
+        <section id="contacto" class="contact">
+
+            <header class="section-header">
+                <p>
+                    <span>05</span>
+                    CONTACT
+                </p>
+
+                <h2>Contacto</h2>
+
+                <p>
+                    Disponible para oportunidades laborales,
+                    proyectos y desarrollo de software.
+                </p>
+            </header>
+
+            <div class="contact__content">
+                <address class="contact-info">
+
+                    <!--
+                    Reemplazar por correo profesional real
+                    -->
+
+                    <p>
+                        <strong>GitHub</strong><br>
+
+                        <a
+                            href="https://github.com/KarlaSantillan"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            github.com/KarlaSantillan
+                        </a>
+                    </p>
+
+
+                    <p>
+                        <strong>LinkedIn</strong><br>
+
+                        <a
+                            href="https://www.linkedin.com/in/karla-santillan-0527a6292/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn de Karla Santillan
+                        </a>
+                    </p>
+
+                </address>
+
+
+                <!-- FORMULARIO -->
+
+                <form
+                    class="contact-form"
+                    action="https://formspree.io/f/mljdbkkl"
+                    method="POST"
+                >
+
+                    <div>
+                        <label for="nombre">
+                            Nombre
+                        </label>
+
+                        <input
+                            type="text"
+                            id="nombre"
+                            name="nombre"
+                            placeholder="Tu nombre"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="correo">
+                            Correo electrónico
+                        </label>
+
+                        <input
+                            type="email"
+                            id="correo"
+                            name="correo"
+                            placeholder="tucorreo@dominio.com"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="asunto">
+                            Asunto
+                        </label>
+
+                        <input
+                            type="text"
+                            id="asunto"
+                            name="asunto"
+                            placeholder="Motivo del mensaje"
+                            required
+                        >
+                    </div>
+
+                    <div>
+                        <label for="mensaje">
+                            Mensaje
+                        </label>
+
+                        <textarea
+                            id="mensaje"
+                            name="mensaje"
+                            rows="6"
+                            placeholder="Cuéntame en qué puedo ayudarte..."
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit">
+                        ♥ ENVIAR
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+    <footer class="site-footer">
+
         <p>
-            &copy; 2026 Karla. Todos los derechos reservados.
+            &copy; 2026 Karla Santillan.
+            Todos los derechos reservados.
         </p>
 
         <nav aria-label="Redes profesionales">
-            <a href="#github" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a
+                href="https://github.com/KarlaSantillan"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
 
-            <a href="#linkedin" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a
+                href="https://www.linkedin.com/in/karla-santillan-0527a6292/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
         </nav>
     </footer>
+
+
+    <a
+        class="back-to-top"
+        href="#inicio"
+        aria-label="Volver al inicio"
+    >
+        ↑
+    </a>
 
     <script src="js/script.js"></script>
 </body>
