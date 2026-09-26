@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bungee+Inline&family=Jersey+25&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Zen+Dots&display=swap');
 :root {
 
     --color-background: #09070d;
@@ -18,8 +19,8 @@
     --color-border: #5f1f9c;
     --color-border-light: rgb(243 131 215 / 0.25);
 
-    --font-primary: "Inter", Arial, sans-serif;
-    --font-display: "Courier New", monospace;
+    --font-primary: "Bungee inline", Arial, sans-serif;
+    --font-display: "Audiowide", monospace;
 
     --font-size-sm: 0.875rem;
     --font-size-md: 1rem;
