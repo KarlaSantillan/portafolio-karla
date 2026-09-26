@@ -10,36 +10,78 @@
 <body>
     <header class="site-header">
         <nav class="navbar" aria-label="Navegación principal">
+            <a class="navbar__brand" href="#inicio">
+                ♥ K. SANTILLAN
+            </a>
 
-            <a class="navbar__brand" href="#inicio">♥ K. SANTILLAN</a>
+            <button
+                class="navbar__toggle"
+                type="button"
+                aria-label="Abrir menú de navegación"
+                aria-expanded="false"
+                aria-controls="navbar-menu"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
 
-            <ul class="navbar__menu">
+
+            <!-- Menú -->
+
+            <ul
+                class="navbar__menu"
+                id="navbar-menu"
+            >
+
                 <li>
-                    <a href="#inicio">Inicio</a>
+                    <a href="#inicio">
+                        Inicio
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#sobre-mi">Sobre mí</a>
+                    <a href="#sobre-mi">
+                        Sobre mí
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#habilidades">Skills</a>
+                    <a href="#habilidades">
+                        Skills
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#proyectos">Proyectos</a>
+                    <a href="#proyectos">
+                        Proyectos
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#design-system">Design</a>
+                    <a href="#design-system">
+                        Design
+                    </a>
                 </li>
 
                 <li>
-                    <a href="#contacto">Contacto</a>
+                    <a href="#contacto">
+                        Contacto
+                    </a>
                 </li>
+
+                <li>
+                    <a
+                        class="navbar__github"
+                        href="https://github.com/KarlaSantillan"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub
+                    </a>
+                </li>
+
             </ul>
-
-            <a class="navbar__github" href="https://github.com/KarlaSantillan" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de GitHub de Karla Santillan"> GitHub </a>
         </nav>
     </header>
 
@@ -817,6 +859,7 @@
                     class="contact-form"
                     action="https://formspree.io/f/mljdbkkl"
                     method="POST"
+                    novalidate
                 >
 
                     <div>
@@ -831,6 +874,10 @@
                             placeholder="Tu nombre"
                             required
                         >
+                        <small
+                            class="form-error"
+                            id="error-nombre"
+                        ></small>
                     </div>
 
                     <div>
@@ -845,6 +892,10 @@
                             placeholder="tucorreo@dominio.com"
                             required
                         >
+                        <small
+                            class="form-error"
+                            id="error-correo"
+                        ></small>
                     </div>
 
                     <div>
@@ -859,6 +910,10 @@
                             placeholder="Motivo del mensaje"
                             required
                         >
+                        <small
+                            class="form-error"
+                            id="error-asunto"
+                        ></small>
                     </div>
 
                     <div>
@@ -873,6 +928,10 @@
                             placeholder="Cuéntame en qué puedo ayudarte..."
                             required
                         ></textarea>
+                        <small
+                            class="form-error"
+                            id="error-mensaje"
+                        ></small>
                     </div>
 
                     <button type="submit">
@@ -912,7 +971,7 @@
 
     <a
         class="back-to-top"
-        href="#inicio"
+        type = "button"
         aria-label="Volver al inicio"
     >
         ↑
