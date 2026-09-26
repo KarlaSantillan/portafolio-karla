@@ -329,9 +329,6 @@ h3 {
     transform: translateY(-2px);
 }
 
-/* =========================================
-   BOTÓN HAMBURGUESA
-========================================= */
 
 .navbar__toggle {
     display: none;
@@ -696,9 +693,6 @@ h3 {
     font-size: var(--font-size-sm);
 }
 
-/* =========================================
-   ENCABEZADOS DE SECCIÓN
-========================================= */
 
 .section-header {
     max-width: 720px;
@@ -1339,7 +1333,7 @@ h3 {
         box-shadow var(--transition-normal);
 }
 
-/* Ocultar proyectos filtrados con JavaScript */
+
 
 .project-card[hidden] {
     display: none;
@@ -2445,7 +2439,7 @@ h3 {
         0 8px 25px rgb(0 0 0 / 0.25);
 
 
-    /* Oculto inicialmente */
+
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -2463,7 +2457,7 @@ h3 {
 }
 
 
-/* JavaScript agregará esta clase */
+
 
 .back-to-top.is-visible {
     opacity: 1;
@@ -2489,13 +2483,11 @@ h3 {
 
 
 
-/* =========================================
-   RESPONSIVE — TABLET
-========================================= */
+
 
 @media (max-width: 1024px) {
 
-    /* Hero */
+
 
     .hero {
         grid-template-columns:
@@ -2516,7 +2508,7 @@ h3 {
     }
 
 
-    /* Sobre mí */
+
 
     .about__content {
         grid-template-columns:
@@ -2525,7 +2517,7 @@ h3 {
     }
 
 
-    /* Skills */
+
 
     .skills__grid {
         grid-template-columns:
@@ -2536,7 +2528,7 @@ h3 {
     }
 
 
-    /* Proyectos */
+
 
     .projects__grid {
         grid-template-columns:
@@ -2547,7 +2539,6 @@ h3 {
     }
 
 
-    /* Design System */
 
     .design-system__grid {
         grid-template-columns:
@@ -2559,13 +2550,10 @@ h3 {
 
 }
 
-/* =========================================
-   RESPONSIVE — TABLET
-========================================= */
 
 @media (max-width: 1024px) {
 
-    /* Hero */
+
 
     .hero {
         grid-template-columns:
@@ -2586,7 +2574,7 @@ h3 {
     }
 
 
-    /* Sobre mí */
+
 
     .about__content {
         grid-template-columns:
@@ -2595,7 +2583,7 @@ h3 {
     }
 
 
-    /* Skills */
+
 
     .skills__grid {
         grid-template-columns:
@@ -2606,7 +2594,7 @@ h3 {
     }
 
 
-    /* Proyectos */
+
 
     .projects__grid {
         grid-template-columns:
@@ -2617,7 +2605,7 @@ h3 {
     }
 
 
-    /* Design System */
+
 
     .design-system__grid {
         grid-template-columns:
@@ -2629,9 +2617,7 @@ h3 {
 
 }
 
-/* =========================================
-   RESPONSIVE — MÓVIL
-========================================= */
+
 
 @media (max-width: 768px) {
 
@@ -2641,9 +2627,7 @@ h3 {
     }
 
 
-    /* =========================
-       CONTENEDOR
-    ========================= */
+
 
     main > section {
         width:
@@ -2657,9 +2641,7 @@ h3 {
     }
 
 
-    /* =========================
-       NAVBAR
-    ========================= */
+
 
     .navbar {
         position: relative;
@@ -2728,7 +2710,6 @@ h3 {
     }
 
 
-    /* Menú abierto */
 
     .navbar.is-open .navbar__menu {
         max-height: 500px;
@@ -2768,7 +2749,6 @@ h3 {
     }
 
 
-    /* GitHub móvil */
 
     .navbar__github {
         margin-top:
@@ -2782,9 +2762,7 @@ h3 {
     }
 
 
-    /* =========================
-       HAMBURGUESA ABIERTA
-    ========================= */
+
 
     .navbar.is-open
     .navbar__toggle span:nth-child(1) {
@@ -2808,9 +2786,7 @@ h3 {
     }
 
 
-    /* =========================
-       HERO
-    ========================= */
+
 
     .hero {
         min-height: auto;
@@ -2855,9 +2831,7 @@ h3 {
     }
 
 
-    /* =========================
-       SOBRE MÍ
-    ========================= */
+
 
     .about__content {
         grid-template-columns:
@@ -2871,9 +2845,7 @@ h3 {
     }
 
 
-    /* =========================
-       SKILLS
-    ========================= */
+
 
     .skills__grid {
         grid-template-columns:
@@ -2881,9 +2853,7 @@ h3 {
     }
 
 
-    /* =========================
-       PROYECTOS
-    ========================= */
+
 
     .projects__grid {
         grid-template-columns:
@@ -2891,9 +2861,7 @@ h3 {
     }
 
 
-    /* =========================
-       DESIGN SYSTEM
-    ========================= */
+
 
     .design-system__grid {
         grid-template-columns:
@@ -2901,7 +2869,7 @@ h3 {
     }
 
 
-    /* Colores */
+
 
     .color-tokens {
         grid-template-columns:
@@ -2912,9 +2880,7 @@ h3 {
     }
 
 
-    /* =========================
-       CONTACTO
-    ========================= */
+
 
     .contact__content {
         grid-template-columns:
@@ -2922,9 +2888,7 @@ h3 {
     }
 
 
-    /* =========================
-       FOOTER
-    ========================= */
+
 
     .site-footer {
         flex-direction:
@@ -2936,13 +2900,11 @@ h3 {
 
 }
 
-/* =========================================
-   RESPONSIVE — TELÉFONOS PEQUEÑOS
-========================================= */
+
 
 @media (max-width: 520px) {
 
-    /* Hero */
+
 
     .hero__title {
         font-size:
@@ -2966,7 +2928,6 @@ h3 {
     }
 
 
-    /* Botones */
 
     .hero__actions {
         flex-direction:
@@ -2982,7 +2943,7 @@ h3 {
     }
 
 
-    /* Cards */
+
 
     .terminal-card,
     .info-card,
@@ -2995,7 +2956,7 @@ h3 {
     }
 
 
-    /* Skills */
+
 
     .skill-item {
         align-items:
@@ -3009,7 +2970,6 @@ h3 {
     }
 
 
-    /* Proyectos */
 
     .project-filters {
         display: grid;
@@ -3033,7 +2993,7 @@ h3 {
     }
 
 
-    /* Design System */
+
 
     .color-tokens {
         grid-template-columns:
@@ -3052,21 +3012,20 @@ h3 {
     }
 
 
-    /* Formulario */
+
 
     .contact-form button {
         width: 100%;
     }
 
 
-    /* Footer */
+
 
     .site-footer nav {
         flex-wrap: wrap;
     }
 
 
-    /* Volver arriba */
 
     .back-to-top {
         right: 1rem;
@@ -3078,9 +3037,7 @@ h3 {
 
 }
 
-/* =========================================
-   VALIDACIÓN DEL FORMULARIO
-========================================= */
+
 
 .form-error {
     min-height: 1rem;
@@ -3091,7 +3048,7 @@ h3 {
 }
 
 
-/* Campo incorrecto */
+
 
 .contact-form input.is-invalid,
 .contact-form textarea.is-invalid {
